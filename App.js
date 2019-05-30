@@ -13,11 +13,11 @@ export default class App extends React.Component {
       'Steve Vai'
     ];
 
-    const textElements = names.map( (name, index) => {
-      return <Text key={index}>{name}</Text>
+    const textElements = names.map( name => {
+      return <Text key={name}>{name}</Text>
     })
 
-    return textElements;
+    return textElements; 
 
   }
 
