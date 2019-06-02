@@ -22,21 +22,24 @@ componentDidMount(){
         const {results} = response.data;
         this.setState({
           peoples: results
-        })
+        });
       })
 }
 
   renderList() {
-    
-    // Promise 
-    
-      return 0
+    const textElements = this.state.peoples.map(people => {
+      const { first } = people.name;
+      return <Text key={ first }>{ first }</Text>; 
+    });
+
+    return textElements;
   }
 
   render() {
     return (
       <View>
         <Header title='Contacts'/>
+        {this.renderList()}
       </View>
     );
   }
