@@ -11,16 +11,16 @@ const PeopleList = props => {
             <View key={ first } style={styles.line}>
                 <Text style={styles.lineText}>
                     { first }
-                </Text>;
+                </Text>
             </View>
         );
-    });
+    })
 
     return(
     <View style={styles.container}>
         { textElements }
     </View>
-    );
+    )
 };
 
 const styles = StyleSheet.create({
@@ -28,12 +28,17 @@ const styles = StyleSheet.create({
         backgroundColor: '#e2f9ff'
     },
     line: {
-        heigt: 60,
+        height: 60,
         borderBottomWidth: 1,
-        borderBottomColor:"#bbb"
+        borderBottomColor:"#bbb",
+        
+        alignItems: 'center',
+        flexDirection: 'row',
+
     },
     lineText: {
-
+        fontSize: 20,
+        paddingLeft: 15
     }
 });
 
