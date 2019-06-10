@@ -5,7 +5,7 @@ import axios from 'axios'
 
 import Header from './src/components/Header';
 import PeopleList from './src/components/PeopleList';
-
+    
 export default class App extends React.Component {
 
   constructor(props){
